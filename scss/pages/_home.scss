@@ -8,7 +8,7 @@
     // border: solid 1px red;
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-mobile.jpg");
+    background: url("../assets/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -62,7 +62,7 @@
   body:has(main.home-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-tablet.jpg");
+    background: url("../assets/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -125,7 +125,7 @@
   body:has(main.home-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-desktop.jpg");
+    background: url("../assets/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
