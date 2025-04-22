@@ -150,6 +150,7 @@
     grid-template: auto / repeat(2, 1fr);
     align-items: end;
     margin: 128px 0;
+    padding: 0 64px;
 
     span {
       @include text-preset-5;
