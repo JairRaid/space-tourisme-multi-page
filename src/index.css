@@ -543,7 +543,7 @@ html {
 /* mobile */
 @media (max-width: 47.9375rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-mobile.jpg");
+    background: url("../assets/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -662,7 +662,7 @@ html {
 /* tablet */
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-tablet.jpg");
+    background: url("../assets/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -779,7 +779,7 @@ html {
 /* desktop */
 @media (min-width: 64rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-desktop.jpg");
+    background: url("../assets/destination/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -913,7 +913,7 @@ html {
 /* mobile */
 @media (max-width: 47.9375rem) {
   body:has(main.crew-page) {
-    background: url("../../assets/crew/background-crew-mobile.jpg");
+    background: url("../assets/crew/background-crew-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1017,7 +1017,7 @@ html {
 /* tablet */
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   body:has(main.crew-page) {
-    background: url("../../assets/crew/background-crew-mobile.jpg");
+    background: url("../assets/crew/background-crew-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1122,7 +1122,7 @@ html {
 /* desktop */
 @media (min-width: 64rem) {
   body:has(main.crew-page) {
-    background: url("../../assets/crew/background-crew-desktop.jpg");
+    background: url("../assets/crew/background-crew-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1255,7 +1255,7 @@ html {
   body:has(main.tech-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/technology/background-technology-mobile.jpg");
+    background: url("../assets/technology/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1360,7 +1360,7 @@ html {
   body:has(main.tech-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/technology/background-technology-tablet.jpg");
+    background: url("../assets/technology/background-technology-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1467,7 +1467,7 @@ html {
   body:has(main.tech-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/technology/background-technology-desktop.jpg");
+    background: url("../assets/technology/background-technology-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

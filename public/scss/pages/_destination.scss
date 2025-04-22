@@ -5,7 +5,7 @@
 /* mobile */
 @media (max-width: 47.9375rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-mobile.jpg");
+    background: url("../assets/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -122,7 +122,7 @@
 /* tablet */
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-tablet.jpg");
+    background: url("../assets/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -237,7 +237,7 @@
 /* desktop */
 @media (min-width: 64rem) {
   body:has(main.destination-page) {
-    background: url("../../assets/destination/background-destination-desktop.jpg");
+    background: url("../assets/destination/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
