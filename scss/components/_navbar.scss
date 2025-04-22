@@ -1,0 +1,14 @@
+@use "../utils/mixins" as *;
+
+.nav-bar {
+  a {
+    @include text-preset-8;
+    color: white;
+    display: flex;
+    gap: 0 12px;
+  }
+
+  a span {
+    font-weight: 700;
+  }
+}

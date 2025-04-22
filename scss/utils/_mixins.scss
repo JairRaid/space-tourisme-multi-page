@@ -1,0 +1,68 @@
+@use "../base/typography" as *;
+
+@mixin text-preset-1 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 9rem;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 6.25rem;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-4 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  line-height: auto;
+  letter-spacing: 4px;
+}
+
+@mixin text-preset-6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  line-height: auto;
+  letter-spacing: 15%;
+}
+
+@mixin text-preset-7 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.875rem;
+  line-height: auto;
+  letter-spacing: 2px;
+}
+
+@mixin text-preset-8 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: auto;
+  letter-spacing: 2px;
+}
+
+@mixin text-preset-9 {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  line-height: 180%;
+  letter-spacing: 0;
+}

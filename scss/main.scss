@@ -1,0 +1,26 @@
+// Utils (should be first to use variables, mixins, functions)
+@use "utils/functions";
+@use "utils/mixins";
+@use "utils/variables";
+
+// Base styles
+@use "base/reset";
+@use "base/base";
+@use "base/typography";
+
+// Layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+
+// Components
+@use "components/headerstyles";
+@use "components/buttons";
+@use "components/card";
+@use "components/navbar";
+
+// Pages
+@use "pages/home";
+@use "pages/destination";
+@use "pages/crew";
+@use "pages/technology";
