@@ -1,0 +1,369 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+@use "../base/typography" as *;
+
+/* mobile */
+@media (max-width: 47.9375rem) {
+  body:has(main.destination-page) {
+    background: url("../../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main */
+  .destination-page {
+    padding: 24px;
+
+    h1 {
+      @include text-preset-6;
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 2.4px;
+      color: white;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    h1::before {
+      content: "01";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      height: 203px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    menu {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0 32px;
+      height: 32px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      @include text-preset-8;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: unset;
+      border-bottom: solid 3px rgba(255, 255, 255, 0);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      border-bottom: solid 3px rgba(255, 255, 255, 1);
+    }
+
+    h2 {
+      @include text-preset-2;
+      font-size: 3.5rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    p {
+      @include text-preset-9;
+      font-size: 0.9375rem;
+      color: $blue-300;
+      text-align: center;
+      max-width: 290px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: white;
+      opacity: 25%;
+      margin: 24px 0;
+    }
+
+    .def-list {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 24px 0;
+      color: white;
+    }
+
+    dt {
+      @include text-preset-7;
+      margin-bottom: 12px;
+    }
+
+    dd {
+      @include text-preset-6;
+      font-family: "Bellefair";
+    }
+  }
+}
+
+/* tablet */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+  body:has(main.destination-page) {
+    background: url("../../assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main */
+  .destination-page {
+    padding: 40px;
+
+    h1 {
+      @include text-preset-5;
+      font-weight: 400;
+      font-size: 1.25rem;
+      letter-spacing: 3px;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    h1::before {
+      content: "01";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      height: 384px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    menu {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0 32px;
+      height: 32px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      @include text-preset-8;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: unset;
+      border-bottom: solid 3px rgba(255, 255, 255, 0);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      border-bottom: solid 3px rgba(255, 255, 255, 1);
+    }
+
+    h2 {
+      @include text-preset-2;
+      font-size: 3.5rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    p {
+      @include text-preset-9;
+      font-size: 0.9375rem;
+      color: $blue-300;
+      text-align: center;
+      max-width: 430px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: white;
+      opacity: 25%;
+      margin: 24px 0;
+    }
+
+    .def-list {
+      text-align: center;
+      display: grid;
+      grid-template: auto / repeat(2, 1fr);
+      color: white;
+    }
+
+    dt {
+      @include text-preset-7;
+      margin-bottom: 12px;
+    }
+
+    dd {
+      @include text-preset-6;
+      font-family: "Bellefair";
+    }
+  }
+}
+
+/* desktop */
+@media (min-width: 64rem) {
+  body:has(main.destination-page) {
+    background: url("../../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .destination-page {
+    padding: 48px 64px;
+
+    h1 {
+      @include text-preset-5;
+      font-weight: 400;
+      font-size: 1.75rem;
+      letter-spacing: 4px;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    h1::before {
+      content: "01";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    article {
+      //   border: solid 1px green;
+      display: grid;
+      grid-template: auto / repeat(2, 1fr);
+      place-items: center;
+      gap: 0 32px;
+      width: 100%;
+    }
+
+    figure {
+      padding: 127px 29.5px;
+
+      img {
+        width: 480px;
+      }
+    }
+
+    menu {
+      display: flex;
+      align-items: stretch;
+      gap: 0 32px;
+      height: 32px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      @include text-preset-8;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: unset;
+      border-bottom: solid 3px rgba(255, 255, 255, 0);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      border-bottom: solid 3px rgba(255, 255, 255, 1);
+    }
+
+    h2 {
+      @include text-preset-2;
+      font-size: 6rem;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    p {
+      @include text-preset-9;
+      font-size: 1.125rem;
+      color: $blue-300;
+      max-width: 400px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: white;
+      opacity: 25%;
+      margin: 40px 0;
+    }
+
+    .def-list {
+      display: grid;
+      grid-template: auto / repeat(2, 1fr);
+      color: white;
+    }
+
+    dt {
+      @include text-preset-7;
+      margin-bottom: 12px;
+    }
+
+    dd {
+      @include text-preset-6;
+      font-family: "Bellefair";
+    }
+  }
+}
+
+/* animation */
+
+.animate-img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-title {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+
+.animate-desc {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s;
+  animation-fill-mode: both;
+}
+
+.animate-def-list {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,359 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+@use "../base/typography" as *;
+
+/* mobile */
+@media (max-width: 47.9375rem) {
+  body:has(main.crew-page) {
+    background: url("../../assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main */
+  .crew-page {
+    padding: 24px;
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .crew-header {
+      padding: 0;
+    }
+
+    h1 {
+      @include text-preset-6;
+      font-size: 1rem;
+      letter-spacing: 2.4px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    h1::before {
+      content: "02";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    .crew-header {
+      padding-top: 40px;
+    }
+
+    .crew-role {
+      @include text-preset-4;
+      font-size: 1.125rem;
+      opacity: 50%;
+      margin-bottom: 8px;
+    }
+
+    .crew-name {
+      @include text-preset-3;
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+    }
+
+    .crew-description {
+      @include text-preset-9;
+      font-size: 0.9375rem;
+      max-width: 327px;
+      height: 164px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      color: $blue-300;
+      max-width: 300px;
+    }
+
+    .crew-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 16px;
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 99px;
+      background-color: rgba(255, 255, 255, 0.1744);
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    figure {
+      padding: 5px 0;
+      height: 350px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          black 85%,
+          transparent 100%
+        );
+      }
+    }
+  }
+}
+
+/* tablet */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+  body:has(main.crew-page) {
+    background: url("../../assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main */
+  .crew-page {
+    padding: 40px;
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .crew-header {
+      padding: 0;
+      padding-top: 40px;
+    }
+
+    h1 {
+      @include text-preset-5;
+      font-size: 1.25rem;
+      letter-spacing: 3px;
+      font-weight: 400;
+      width: 100%;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    h1::before {
+      content: "02";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    .crew-role {
+      @include text-preset-4;
+      font-size: 1.5rem;
+      opacity: 50%;
+      margin-bottom: 16px;
+    }
+
+    .crew-name {
+      @include text-preset-3;
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+    }
+
+    .crew-description {
+      @include text-preset-9;
+      font-size: 1rem;
+      max-width: 470px;
+      height: 117px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      color: $blue-300;
+    }
+
+    .crew-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 16px;
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 99px;
+      background-color: rgba(255, 255, 255, 0.1744);
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    figure {
+      position: relative;
+      height: 540px;
+      margin-bottom: -40px;
+
+      img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+      }
+    }
+  }
+}
+
+/* desktop */
+@media (min-width: 64rem) {
+  body:has(main.crew-page) {
+    background: url("../../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main */
+  .crew-page {
+    padding: 48px 165px;
+    width: 100%;
+
+    .crew-header {
+      padding: 0;
+    }
+
+    .main-container {
+      margin: 0 auto;
+      max-width: 1310px;
+    }
+
+    h1 {
+      @include text-preset-5;
+      font-weight: 400;
+      font-size: 1.75rem;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+      color: white;
+    }
+
+    h1::before {
+      content: "02";
+      opacity: 25%;
+      margin-right: 24px;
+    }
+
+    article {
+      display: grid;
+      grid-template: auto / repeat(2, 1fr);
+      gap: 0 32px;
+      color: white;
+      position: relative;
+    }
+
+    section {
+      margin: auto 0;
+    }
+
+    .crew-role {
+      @include text-preset-4;
+      font-size: 2rem;
+      opacity: 50%;
+      margin-bottom: 16px;
+    }
+
+    .crew-name {
+      @include text-preset-3;
+      font-size: 3.5rem;
+      margin-bottom: 24px;
+    }
+
+    .crew-description {
+      @include text-preset-9;
+      font-size: 1.125rem;
+      max-width: 500px;
+      color: $blue-300;
+    }
+
+    .crew-menu {
+      position: absolute;
+      top: calc(100% - 48px);
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 40px;
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 99px;
+      background-color: rgba(255, 255, 255, 0.1744);
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    button.is-active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    figure {
+      padding: 29px 0;
+      width: 100%;
+      height: 734px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          black 90%,
+          transparent 100%
+        );
+      }
+    }
+  }
+}
+
+/* animation */
+.animate-role {
+  animation: fadeInRole 1s ease-in-out;
+}
+
+.animate-name {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+
+.animate-crew-desc {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s;
+  animation-fill-mode: both;
+}
+
+.animate-crew-img {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s;
+  animation-fill-mode: both;
+}

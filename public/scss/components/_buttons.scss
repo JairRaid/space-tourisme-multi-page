@@ -1,0 +1,122 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+/* mobile */
+@media (max-width: 47.9375rem) {
+  .explore-section {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .explore-link {
+    @include text-preset-4;
+    font-size: 1.125rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 144px;
+    background-color: white;
+    border-radius: 999px;
+    color: $blue-900;
+  }
+
+  .explore-link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 1s ease;
+  }
+
+  .explore-link:hover::after {
+    top: -88px;
+    left: -88px;
+    width: calc(100% + 176px);
+    height: calc(100% + 176px);
+  }
+}
+
+/* tablet */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+  .explore-link {
+    @include text-preset-4;
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 272px;
+    background-color: white;
+    border-radius: 999px;
+    color: $blue-900;
+  }
+
+  .explore-link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 1s ease;
+  }
+
+  .explore-link:hover::after {
+    top: -88px;
+    left: -88px;
+    width: calc(100% + 176px);
+    height: calc(100% + 176px);
+  }
+}
+
+/* desktop */
+@media (min-width: 64rem) {
+  .explore-link {
+    @include text-preset-4;
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 272px;
+    background-color: white;
+    border-radius: 999px;
+    color: $blue-900;
+  }
+
+  .explore-link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 1s ease;
+  }
+
+  .explore-link:hover::after {
+    top: -88px;
+    left: -88px;
+    width: calc(100% + 176px);
+    height: calc(100% + 176px);
+  }
+}
