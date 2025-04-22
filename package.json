@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "sass": "sass --watch public/scss/main.scss:src/index.css",
+    "sass": "sass --watch public/scss/main.scss:src/index.css --style=compressed",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
