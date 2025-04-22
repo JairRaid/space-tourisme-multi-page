@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/JairRaid/space-tourisme-multi-page
+- Live Site URL: https://jairraid.github.io/space-tourisme-multi-page/
 
 ## My process
 
