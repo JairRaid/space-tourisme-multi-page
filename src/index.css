@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Barlow Condensed";
-  src: url("../../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Barlow";
-  src: url("../../fonts/Barlow-Regular.ttf") format("trueptype");
+  src: url("../fonts/Barlow-Regular.ttf") format("trueptype");
   font-weight: 400;
 }
 * {
@@ -361,7 +361,7 @@ html {
   body:has(main.home-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-mobile.jpg");
+    background: url("../assets/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -418,7 +418,7 @@ html {
   body:has(main.home-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-tablet.jpg");
+    background: url("../assets/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -483,7 +483,7 @@ html {
   body:has(main.home-page) {
     display: flex;
     flex-direction: column;
-    background: url("../../assets/home/background-home-desktop.jpg");
+    background: url("../assets/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
