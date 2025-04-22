@@ -36,6 +36,7 @@ function Technology() {
   }, [currentTech]);
 
   function handleClick(selectedIndex) {
+    if (currIndex === selectedIndex) return;
     setCurrentTech({
       data: TECH_DATA[selectedIndex],
       currIndex: selectedIndex,

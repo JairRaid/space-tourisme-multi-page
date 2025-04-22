@@ -35,6 +35,7 @@ function Destination() {
   }, [currentDestination]);
 
   function handleClick(selectedIndex) {
+    if (currIndex === selectedIndex) return;
     setCurrentDestination({
       data: DESTINATION_DATA[selectedIndex],
       currIndex: selectedIndex,

@@ -58,6 +58,7 @@ function Crew() {
   }, [currentCrew]);
 
   function handleClick(selectedIndex) {
+    if (currIndex === selectedIndex) return;
     clearInterval(interval.current);
     setCurrentCrew({
       data: CREW_DATA[selectedIndex],
