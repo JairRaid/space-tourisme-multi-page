@@ -11,6 +11,7 @@ function Technology() {
   const roleRef = useRef();
   const nameRef = useRef();
   const descRef = useRef();
+  const imgRef = useRef();
 
   useEffect(() => {
     const roleEl = roleRef.current;
@@ -27,6 +28,11 @@ function Technology() {
     descEl.classList.remove("animate-crew-desc");
     void descEl.offsetWidth;
     descEl.classList.add("animate-crew-desc");
+
+    const imgEl = imgRef.current;
+    imgEl.classList.remove("animate-tech-img");
+    void imgEl.offsetWidth;
+    imgEl.classList.add("animate-tech-img");
   }, [currentTech]);
 
   function handleClick(selectedIndex) {
@@ -46,9 +52,11 @@ function Technology() {
           <article>
             <figure>
               <img
+                ref={imgRef}
                 src={data.image}
                 alt={data.title}
                 style={{ objectPosition: "center" }}
+                className="animate-tech-img"
               />
             </figure>
             <section>
